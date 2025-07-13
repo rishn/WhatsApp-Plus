@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/WhatsAppPlus.png?raw=true" alt="WhatsApp Plus" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/WhatsAppPlus.png?raw=true" alt="WhatsApp Plus" width="600"/>
 </p>
 
 ## 📖 Overview
@@ -31,7 +31,7 @@ Watch WhatsApp Plus in action:
 
 ## 🚀 Try the Prototype Live
 
-👉 **Check out the prototype here:** [WhatsApp Plus](https://smart-scan-whatsapp.onrender.com)  
+👉 **Check out the prototype here:** [WhatsApp Plus](https://whatsapp-plus.onrender.com)  
 > _Test it with images of invoices, QR codes, or handwritten notes!_
 
 ---

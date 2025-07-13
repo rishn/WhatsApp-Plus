@@ -200,7 +200,7 @@ The `ForwardMessageModal` allows users to forward text messages and images, even
 ### **🟢 Prototype complete and live.** 
 
 WhatsApp Plus is ready for demo, feedback, and iterations.
-👉 [Demo Link](https://smart-scan-whatsapp.onrender.com)  
+👉 [Demo Link](https://whatsapp-plus.onrender.com)  
 
 ---
 
