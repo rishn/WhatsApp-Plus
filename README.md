@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/WhatsAppPlus.png?raw=true" alt="WhatsApp Plus" width="600"/>
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/WhatsAppPlus.png?raw=true" alt="WhatsApp Plus" width="300"/>
 </p>
 
 ## 📖 Overview
