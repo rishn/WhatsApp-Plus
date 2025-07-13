@@ -1,0 +1,211 @@
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative; /* Add this to position the modal relative to the chat window */
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+}
+
+.chat-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff; /* Placeholder background */
+  border: 1px solid #ccc;
+}
+
+.chat-header-right {
+  display: flex;
+  gap: 12px;
+}
+
+.header-icon {
+  background-color: white; /* WhatsApp green */
+  color: black;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #f2ece5;
+  display: flex;
+  flex-direction: column; /* Ensure messages are displayed line by line */
+  gap: 8px; /* Add spacing between messages */
+}
+
+/* Adjust the message container to handle positioning */
+.message {
+  position: relative; /* Make the message container the positioning context */
+  max-width: 60%; /* Maximum width for longer messages */
+  padding: 8px 12px; /* Adjust padding for better spacing */
+  border-radius: 10px;
+  line-height: 1.4;
+  font-size: 15px;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.message.bot {
+  background-color: #fff;
+  align-self: flex-start; /* Align bot messages to the left */
+  border: 1px solid #ccc;
+}
+
+.message.user {
+  background-color: #d9fdd3;
+  align-self: flex-end; /* Align user messages to the right */
+  border: 1px solid #b2d8aa;
+  text-align: left; /* Align text inside the message to the left */
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #1daa61; /* WhatsApp green */
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.chat-input button:hover {
+  background-color: #4abb81; /* Darker green on hover */
+}
+
+.upload-button {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+}
+
+.chat-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #54656f;
+  font-family: Arial, sans-serif;
+  background-color: #fcfcfc;
+}
+
+.placeholder-content {
+  margin-bottom: 20px;
+}
+
+.whatsapp-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.placeholder-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.placeholder-content p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.placeholder-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #8696a0;
+}
+
+.lock-icon {
+  margin-right: 5px;
+}
+
+/* Position the forward button */
+.forward-button {
+  position: absolute; /* Ensure it is positioned relative to the message container */
+  top: 50%; /* Center vertically relative to the message */
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.forward-button.left {
+  left: -40px; /* Position to the left of sender's messages */
+}
+
+.forward-button.right {
+  right: -40px; /* Position to the right of receiver's messages */
+}
+
+/* Ensure the forward button is visible only on hover */
+.message:hover .forward-button {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Ensure image messages maintain proper height */
+.sent-image {
+  width: 200px; /* Fixed width */
+  height: 150px; /* Adjust height dynamically */
+  object-fit: cover; /* Crop the image to fit within the fixed width */
+  display: block; /* Ensure the image takes up the full width of the container */
+}

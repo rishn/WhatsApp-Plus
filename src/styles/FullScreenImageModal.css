@@ -1,0 +1,105 @@
+.fullscreen-image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-image-modal {
+  position: relative;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: white;
+  border-radius: 0; /* Remove border radius for full-page modal */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-screen-modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.full-screen-icon-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.full-screen-icon-button:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+}
+
+.full-screen-modal-content {
+  flex: 1; /* Allow the content to grow and take available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 242, 245, 0.9); /* Light translucent background */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the entire image is visible */
+}
+
+.full-screen-modal-footer {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  max-height: 300px; /* Limit footer height */
+  overflow-y: auto; /* Add scrollbar if footer content overflows */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start; /* Align content to the top */
+}
+
+.full-screen-footer-content {
+  display: flex;
+  flex-direction: column; /* Stack QR codes and text vertically */
+  align-items: center; /* Center the content horizontally */
+  width: 100%; /* Take full width of the footer */
+  max-width: 600px; /* Optional: Limit the width for better readability */
+}
+
+.full-screen-qr-code-section,
+.full-screen-ocr-text-section {
+  margin-top: 10px;
+  width: 100%; /* Ensure sections take full width */
+}
+
+.full-screen-text-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.full-screen-copy-button {
+  background-color: #1daa61; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.full-screen-copy-button:hover {
+  background-color: #4abb81; /* Darker green on hover */
+}

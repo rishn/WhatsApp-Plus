@@ -1,0 +1,98 @@
+.sidebar {
+  width: 300px;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  color: #1daa61;
+  height: 4.3%
+}
+
+.sidebar-header-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-icon {
+  background-color: white; /* WhatsApp green */
+  color: black;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+}
+
+.header-icon:hover {
+  background-color: #efefef;
+}
+
+.chat-list {
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.chat-item:hover {
+  background-color: #f6f5f4; /* Light green on hover */
+}
+
+.chat-item.active {
+  background-color: #f6f5f4; /* Light green on active */
+}
+
+.chat-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.chat-last-message {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Contact avatar */
+.contact-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image fits within the circle */
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Chat details */
+.chat-details {
+  display: flex;
+  flex-direction: column;
+}

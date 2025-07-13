@@ -1,0 +1,462 @@
+.message-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f8f9fa;
+}
+
+.message-input input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  /* Remove border */
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  background-color: #f0f2f5;
+  /* Optional: Add a subtle background color */
+}
+
+.upload-button {
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  border: none;
+}
+
+.message-input button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.message-input button:hover {
+  background-color: #e0e0e0;
+  /* Darker green on hover */
+}
+
+.message-input button:disabled {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #555;
+}
+
+.emoji-button {
+  margin-right: 8px;
+}
+
+.attach-button {
+  margin-right: 8px;
+}
+
+/* --- react-datepicker WhatsApp Styling --- */
+
+/* Base calendar container */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  /* WhatsApp often uses system fonts */
+  border: none;
+  /* Remove default border */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Soft shadow */
+  background-color: #f8f9fa;
+  /* Lighter background, similar to message input */
+  overflow: hidden;
+  /* Ensures rounded corners are applied properly */
+  margin-bottom: 6px;
+}
+
+/* DatePicker input field (your .schedule-input class) */
+.schedule-input {
+  border: 1px solid #ddd;
+  /* Lighter border */
+  border-radius: 20px;
+  /* More rounded like the text input */
+  padding: 8px 12px;
+  /* Consistent padding */
+  font-size: 14px;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0 4px;
+  box-shadow: none;
+  /* Remove default focus shadow if any */
+}
+
+.schedule-input:focus {
+  outline: none;
+  /* Remove default outline */
+  border-color: #1daa61;
+  /* WhatsApp green focus */
+  box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2);
+  /* Soft green shadow */
+}
+
+/* Header part (Month/Year display and navigation buttons) */
+.react-datepicker__header {
+  background-color: #2c855c;
+  /* Darker green/teal like WhatsApp header */
+  padding-top: 8px;
+  border-bottom: none;
+  /* Remove default header border */
+  border-radius: 8px 8px 0 0;
+  /* Apply rounded corners only to top */
+  position: relative;
+  /* For absolute positioning of navigation */
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  font-weight: 600;
+  color: #FFFFFF;
+  /* White text for header */
+  margin-bottom: 29px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Base navigation button styles */
+.react-datepicker__navigation {
+  top: 10px;
+  /* Adjust vertical position */
+  line-height: 1.7em;
+  /* Align arrow vertically */
+  border: none;
+  /* Remove default border */
+  background: none;
+  /* No background */
+  outline: none;
+  /* Remove outline on click */
+  padding: 0;
+  /* Remove default padding from button */
+  /* Remove the grey square on hover */
+  background-color: transparent !important;
+}
+
+/* Positioning for previous button */
+.react-datepicker__navigation--previous {
+  left: 10px;
+  /* Space on the left */
+}
+
+/* Positioning for next button and padding to the right */
+.react-datepicker__navigation--next {
+  right: 10px;
+  /* Base positioning, matching left */
+  /* Add padding-right to the button itself to prevent hover from bleeding */
+  padding-right: 10px;
+  /* Add extra space to the right */
+}
+
+/* Style for the navigation icon (the arrow itself) */
+.react-datepicker__navigation-icon {
+  position: relative;
+  /* To allow pseudo-element ::before to be positioned */
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* Ensure it takes up space for click */
+  text-indent: -999em;
+  /* Hide "Next Month" text visually */
+  overflow: hidden;
+  /* Ensure hidden text doesn't affect layout */
+}
+
+/* --- Crucial Change: Swapping Arrow Shapes --- */
+/* Now, the default icon style will be the LEFT arrow shape */
+.react-datepicker__navigation-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* This is now the LEFT arrow shape */
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #FFFFFF transparent transparent;
+  /* White arrow pointing left */
+  font-size: 1.2em;
+  transition: border-color 0.2s ease;
+  margin-top: -5px;
+}
+
+/* --- Apply the RIGHT arrow shape to the NEXT navigation icon --- */
+.react-datepicker__navigation-icon--next::before {
+  /* This overrides the default to make it a RIGHT arrow shape */
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #FFFFFF;
+  /* White arrow pointing right */
+  margin-top: -5px;
+}
+
+/* --- The PREVIOUS navigation icon will now use the default (LEFT arrow) shape --- */
+/* No specific style needed for --previous, as it will naturally take the default left arrow shape */
+/* .react-datepicker__navigation-icon--previous::before {
+    // This rule is no longer needed as the default is now left arrow
+}
+*/
+
+/* Hover style for the arrows: only change border-color (arrow color) */
+.react-datepicker__navigation--next:hover .react-datepicker__navigation-icon::before {
+  border-color: transparent transparent transparent #DDDDDD;
+  /* Lighter grey for previous arrow on hover */
+}
+
+.react-datepicker__navigation--previous:hover .react-datepicker__navigation-icon::before {
+  border-color: transparent #DDDDDD transparent transparent;
+  /* Lighter grey for next arrow on hover */
+}
+
+
+/* Weekday names (Su, Mo, Tu, etc.) */
+.react-datepicker__day-names {
+  background-color: #2c855c;
+  /* Match header background */
+  display: flex;
+  justify-content: space-around;
+  /* Distribute evenly */
+  padding-bottom: 5px;
+  padding-top: 2px;
+  /* Align with header */
+}
+
+.react-datepicker__day-name {
+  color: #FFFFFF;
+  /* White text */
+  font-weight: 500;
+  width: 2.2rem;
+  /* Consistent width */
+  text-align: center;
+  margin: 0.1rem;
+  /* Small margin for spacing */
+  font-size: 0.85em;
+}
+
+
+/* Calendar days */
+.react-datepicker__month {
+  padding: 10px;
+  /* Padding inside the month view */
+}
+
+.react-datepicker__week {
+  display: flex;
+  justify-content: space-around;
+}
+
+.react-datepicker__day {
+  width: 2.2rem;
+  /* Consistent width for days */
+  height: 2.2rem;
+  /* Consistent height for days */
+  line-height: 2.2rem;
+  /* Center text vertically */
+  margin: 0.1rem;
+  /* Small margin for spacing */
+  border-radius: 50%;
+  /* Make them circular */
+  color: #333;
+  /* Default day text color */
+  font-size: 0.95em;
+  font-weight: 400;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  /* Smooth transitions */
+}
+
+/* Hover state for days */
+.react-datepicker__day:hover {
+  background-color: #e0e0e0;
+  /* Light grey on hover */
+  color: #333;
+}
+
+/* Selected day */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #1daa61;
+  /* WhatsApp green for selected day */
+  color: #FFFFFF;
+  /* White text on selected day */
+  font-weight: 600;
+}
+
+/* Selected day hover state (if different) */
+.react-datepicker__day--selected:hover {
+  background-color: #4abb81;
+  /* Slightly darker green on hover for selected */
+}
+
+/* Current day (if not selected) */
+.react-datepicker__day--today {
+  font-weight: 600;
+  /* Bold today's date */
+  color: #000;
+  /* Darker green text for today if not selected */
+}
+
+/* Disabled days (past dates) */
+.react-datepicker__day--disabled {
+  color: #ccc;
+  /* Lighter grey for disabled days */
+  cursor: not-allowed;
+  background-color: transparent;
+  /* No background */
+}
+
+.react-datepicker__day--disabled:hover {
+  background-color: transparent;
+  /* No hover effect on disabled */
+}
+
+/* --- Distinguish Dates from Previous/Next Months --- */
+.react-datepicker__day--outside-month {
+  color: #A0A0A0;
+  /* A lighter grey to indicate it's not the current month */
+  /* You could also reduce opacity: opacity: 0.6; */
+}
+
+
+/* Month and Year dropdowns (if enabled) */
+.react-datepicker__month-select,
+.react-datepicker__year-select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 0 5px;
+  background-color: #FFFFFF;
+  color: #333;
+}
+
+/* Time picker section */
+.react-datepicker__time-container {
+  border-left: 1px solid #eee;
+  /* Subtle separator for time picker */
+  width: 100px;
+  /* Adjust width as needed */
+  background-color: #f8f9fa;
+  border-radius: 0 8px 8px 0;
+  /* Rounded corners only on right side */
+}
+
+.react-datepicker__time {
+  padding: 5px 0;
+}
+
+.react-datepicker__time-box {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.react-datepicker__time-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  /* Enable scrolling for time list */
+  height: 180px;
+  /* Adjust height for scrollable time list */
+  scrollbar-width: thin;
+  /* Firefox scrollbar */
+  scrollbar-color: #1daa61 #eee;
+  /* Firefox scrollbar color */
+}
+
+/* Webkit scrollbar for time list */
+.react-datepicker__time-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-thumb {
+  background-color: #1daa61;
+  /* WhatsApp green scrollbar thumb */
+  border-radius: 4px;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-track {
+  background-color: #eee;
+  /* Light track */
+}
+
+.react-datepicker__time-list-item {
+  padding: 8px 10px;
+  font-size: 0.9em;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  /* Slight rounding for time list items */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: #e0e0e0;
+  /* Light grey on hover */
+  color: #333;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: #1daa61 !important;
+  /* WhatsApp green for selected time, now with !important */
+  color: #FFFFFF !important;
+  /* White text on selected time, now with !important */
+  font-weight: 600 !important;
+  /* Ensure font weight is applied, now with !important */
+}
+
+.react-datepicker__time-list-item--selected:hover {
+  background-color: #4abb81;
+  /* Slightly darker green on hover for selected */
+}
+
+/* Disabled time slots (from filterTime) */
+.react-datepicker__time-list-item--disabled {
+  color: #ccc;
+  /* Lighter grey for disabled times */
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.react-datepicker__time-list-item--disabled:hover {
+  background-color: transparent;
+}
+
+/* Poppers for small screens (adjust as needed) */
+.react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::after {
+  border-top-color: #2c855c;
+  /* Match header color for arrow */
+}
+
+.react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::after {
+  border-bottom-color: #2c855c;
+}
+
+/* Reduce padding at the bottom of the last row of dates */
+.react-datepicker__month-container {
+  padding-bottom: 5px;
+  /* Reduced from 10px to 5px */
+}

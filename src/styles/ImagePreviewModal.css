@@ -1,0 +1,210 @@
+.image-preview-modal-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Semi-transparent background */
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start; /* Align modal to the left */
+  align-items: flex-end; /* Align modal to the bottom */
+}
+
+.image-preview-modal {
+  background: white;
+  width: 300px; /* Adjust width to fit within the chat window */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: black;
+  margin: 0 16px 16px 390px; /* Default left margin to match the sidebar width */
+}
+
+/* Adjust for smaller screen sizes if the sidebar width changes */
+@media (max-width: 768px) {
+  .image-preview-modal {
+    margin: 0 16px 16px 250px; /* Adjust left margin for smaller sidebar width */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-preview-modal {
+    margin: 0 16px 16px 200px; /* Adjust left margin for even smaller sidebar width */
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.icon-button:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+}
+
+.modal-content {
+  max-height: 400px; /* Limit the height of the modal content */
+  overflow-y: auto; /* Add vertical scrollbar if content overflows */
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.image-navigation {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin: 10px 0;
+}
+
+.preview-image {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 8px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.add-more-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px; /* Square with rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #f0f0f0; /* Light grey background similar to WhatsApp light mode */
+}
+
+.add-more-button:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+
+.send-button {
+  background-color: #1daa61; /* WhatsApp green */
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #4abb81; /* Darker green on hover */
+}
+
+.ocr-text-section {
+  margin-top: 20px;
+}
+
+.text-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.text-part span {
+  word-wrap: break-word; /* Break long words */
+  white-space: pre-wrap; /* Preserve line breaks and wrap text */
+  overflow-wrap: break-word; /* Break long words if necessary */
+}
+
+.qr-code-section {
+  margin-top: 20px;
+}
+
+.qr-code-section h4 {
+  margin-bottom: 10px;
+}
+
+.qr-code-section .text-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.qr-code-section span {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  display: block;
+}
+
+.copy-button {
+  background-color: #1daa61; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-button:hover {
+  background-color: #4abb81; /* Slightly darker green on hover */
+}
+
+.delete-button {
+  margin-left: 10px;
+  color: black; /* Match the color of other icons */
+}
+
+/* DatePicker input field (your .schedule-input class) */
+.schedule-input {
+  border: 1px solid #ddd;
+  /* Lighter border */
+  border-radius: 20px;
+  /* More rounded like the text input */
+  padding: 8px 12px;
+  /* Consistent padding */
+  font-size: 14px;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0 4px;
+  box-shadow: none;
+  /* Remove default focus shadow if any */
+}
