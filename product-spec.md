@@ -95,11 +95,11 @@ The `UPIPaymentModal` detects UPI QR codes and provides options to copy the UPI 
 
 ---
 
-### **3. Scheduled Send**
+### **3. Scheduled Send Utility**
 The `Scheduled Send` feature allows users to schedule text messages and images for future delivery.
 
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/ScheduledSend.png?raw=true" alt="Scheduled Send" />
+  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/ScheduledSendUtility.png?raw=true" alt="Scheduled Send Utility" />
 </p>
 
 ---

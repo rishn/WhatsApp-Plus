@@ -106,7 +106,7 @@ The `UPIPaymentModal` detects UPI QR codes and provides options to copy the UPI 
 
 ---
 
-### **3. Scheduled Send**
+### **3. Scheduled Send Utility**
 The `Scheduled Send` feature allows users to schedule text messages and images for future delivery.
 
 <p align="center">
