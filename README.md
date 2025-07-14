@@ -110,7 +110,7 @@ The `UPIPaymentModal` detects UPI QR codes and provides options to copy the UPI 
 The `Scheduled Send` feature allows users to schedule text messages and images for future delivery.
 
 <p align="center">
-  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ScheduledSend.png?raw=true" alt="Scheduled Send" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ScheduledSendUtility.png?raw=true" alt="Scheduled Send Utility" />
 </p>
 
 ---

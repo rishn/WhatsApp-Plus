@@ -19,8 +19,8 @@
 .env.production.local
 Smart Scan Case Study.docx
 Scheduled Send Case Study.docx
-assets/UPIPaymentModal.png
-assets/ImagePreviewModal.png
+assets/UPIPaymentModalOld.png
+assets/ImagePreviewModalOld.png
 
 npm-debug.log*
 yarn-debug.log*
