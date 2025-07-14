@@ -81,7 +81,7 @@ All processing happens **on-device**, ensuring:
 The `ImagePreviewModal` allows users to view and analyze images. Extracted text and QR codes are displayed with actionable buttons.
 
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/ImagePreviewModal.png?raw=true" alt="Image Preview Modal" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ImagePreviewModal.png?raw=true" alt="Image Preview Modal" />
 </p>
 
 ---
@@ -90,7 +90,7 @@ The `ImagePreviewModal` allows users to view and analyze images. Extracted text 
 The `UPIPaymentModal` detects UPI QR codes and provides options to copy the UPI link or initiate payments.
 
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/UPIPaymentModal.png?raw=true" alt="UPI Payment Modal" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/UPIPaymentModal.png?raw=true" alt="UPI Payment Modal" />
 </p>
 
 ---
@@ -99,7 +99,7 @@ The `UPIPaymentModal` detects UPI QR codes and provides options to copy the UPI 
 The `Scheduled Send` feature allows users to schedule text messages and images for future delivery.
 
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/ScheduledSendUtility.png?raw=true" alt="Scheduled Send Utility" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ScheduledSendUtility.png?raw=true" alt="Scheduled Send Utility" />
 </p>
 
 ---
@@ -108,7 +108,7 @@ The `Scheduled Send` feature allows users to schedule text messages and images f
 The `ForwardMessageModal` allows users to forward text messages and images, even scheduled ones to other chats.
 
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/ForwardMessageModal.png?raw=true" alt="Foward Message Modal" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ForwardMessageModal.png?raw=true" alt="Foward Message Modal" />
 </p>
 
 ---
@@ -123,11 +123,11 @@ The `ForwardMessageModal` allows users to forward text messages and images, even
 
 ### Feature Architecture Flow
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/SmartScanFeatureArchitectureFlow.png?raw=true" alt="Smart Scan Feature Architecture Flow" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/SmartScanFeatureArchitectureFlow.png?raw=true" alt="Smart Scan Feature Architecture Flow" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/rishn/Smart-Scan-WhatsApp-OCR/blob/main/assets/ScheduledSendFeatureArchitectureFlow.png?raw=true" alt="Scheduled Send Feature Architecture Flow" />
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ScheduledSendFeatureArchitectureFlow.png?raw=true" alt="Scheduled Send Feature Architecture Flow" />
 </p>
 
 ### Component Breakdown:
