@@ -13,6 +13,9 @@ export default function FullScreenImageModal({ image, onClose, onAnalyze }) {
   const { showToast } = useToast(); // Get showToast function
 
   const handleAnalyze = async () => {
+    setQrCodeUrls([]); // Reset QR code URLs
+    setOcrTextParts([]); // Reset OCR text parts
+    
     const extractedText = await onAnalyze(image);
 
     const canvas = document.createElement("canvas");

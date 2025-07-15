@@ -163,10 +163,18 @@ The `ForwardMessageModal` allows users to forward text messages and images, even
 - **Privacy**: On-device processing ensures secure data handling.
 - **Convenience**: No switching apps. No copy-pasting. Just scan and act.
 
+<p align="center">
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/SmartScanUXComparison.png?raw=true" alt="Feature Architecture Flow" />
+</p>
+
 #### Scheduled Send
 - **Convenience**: Enables users to plan communications in advance, reducing last-minute stress.
 - **Consistency**: Ensures messages are delivered at optimal times, improving engagement rates.
 - **Flexibility**: Supports one-time scheduling or recurring messages for ongoing campaigns.
+
+<p align="center">
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ScheduledSendUseCase.png?raw=true" alt="Feature Architecture Flow" />
+</p>
 
 ---
 
@@ -176,10 +184,18 @@ The `ForwardMessageModal` allows users to forward text messages and images, even
 - **Improved Productivity**: Streamlines workflows for SMBs and micro-entrepreneurs.
 - **Enhanced Engagement**: Increases time spent within WhatsApp.
 
+<p align="center">
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/SmartScanTimeSavings.png?raw=true" alt="Feature Architecture Flow" />
+</p>
+
 #### Scheduled Send
 - **Improved Productivity**: Frees up time by automating routine communication tasks.
 - **Enhanced Engagement**: Delivers messages when recipients are most likely to respond, boosting effectiveness.
 - **Scalable**: Handles large recipient lists without compromising delivery speed or accuracy.
+
+<p align="center">
+  <img src="https://github.com/rishn/WhatsApp-Plus/blob/main/assets/ScheduledSendAdoptionGrowth.png?raw=true" alt="Feature Architecture Flow" />
+</p>
 
 ---
 

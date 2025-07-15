@@ -31,7 +31,7 @@ export default function ForwardMessageModal({ contacts, onClose, onForward, posi
       if (position.top + modalHeight > viewportHeight) {
         top = position.top - modalHeight; // Move modal above the clicked element
       }
-      if (position.left + modalWidth > viewportWidth) {
+      if (position.left + modalWidth * 2 > viewportWidth) {
         left = position.left - modalWidth; // Move modal to the left of the clicked element
       }
       if (position.top < 0) {

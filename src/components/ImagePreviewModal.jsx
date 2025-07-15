@@ -28,6 +28,8 @@ export default function ImagePreviewModal({ images, onClose, onAnalyze, onSend, 
   };
 
   const handleAnalyze = async () => {
+    setAnalysisData((prev) => ({ ...prev, [currentIndex]: { ocrText: [], qrCodes: [] } }));
+
     const extractedText = await onAnalyze(currentImage);
 
     const canvas = document.createElement("canvas");
