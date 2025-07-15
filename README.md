@@ -18,12 +18,18 @@ This privacy-first, on-device solution enhances productivity and streamlines com
 
 ---
 
-## 📹 Demo
+## 📹 Demos
 
 Watch WhatsApp Plus in action: 
 <p align="center">
   <a href="https://drive.google.com/file/d/1w3yzi3O1wO7HWPpdN8QJA0Xh7XT0H9DL/view">
-    <img src="https://github.com/user-attachments/assets/0bbc3f9b-7999-48b4-a290-f9cf7c930dc2" alt="Watch Windows Opera Demo" width="600">
+    <img src="https://github.com/user-attachments/assets/0bbc3f9b-7999-48b4-a290-f9cf7c930dc2" alt="Watch Smart Scan Windows Opera Demo" width="600">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1nPPux3LqDjCP-mYC7YgkmHHIGD2ru1fw/view">
+    <img src="https://github.com/user-attachments/assets/3fda7e86-0b27-4638-a61c-6f1ba34ec1c5" alt="Watch Scheduled Send Windows Opera Demo" width="600">
   </a>
 </p>
 
